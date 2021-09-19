@@ -1,0 +1,19 @@
+{
+  "name": "imessagegraphqlserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^3.3.0",
+    "exec": "^0.2.1",
+    "glob": "^7.1.7",
+    "graphql": "^15.5.3",
+    "imessagemodule": "^0.4.0",
+    "sqlite3": "^5.0.2"
+  }
+}
