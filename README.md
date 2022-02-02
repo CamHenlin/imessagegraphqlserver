@@ -15,28 +15,39 @@ You will need to provide Terminal.app additional permissions in your macOS "Secu
 #### Running from package
 To run from package, try the following:
 
-- Download from LINK
-- Double click on the downloaded file
-- Terminal window should run
+- Download from [this link](https://github.com/CamHenlin/imessagegraphqlserver/raw/main/dist/imessagegraphqlserver.zip)
+- Unzip the downloaded file
+- A Terminal window should pop up and ask for the permissions from the "Required Permissions" section above
+
+Now skip to the section titled "What do I do once I'm up and running?" below
 
 #### Running from source
 To run source, try the following. In a new terminal window:
 
 ```
-git clone LINK
+git clone git@github.com:CamHenlin/imessagegraphqlserver.git
 cd imessagegraphqlserver
 npm install
 node index
 ```
 
+Next, a Terminal window should pop up and ask for the permissions from the "Required Permissions" section above
+
+##### Building package from source
+To build the package from source `pkg` is used. `pkg` is configured in the `pkg` section of this project's `package.json`. Simple run the following command to generate a new binary in the `/dist` directory:
+
+```
+pkg .
+```
+
 ## What do I do once I'm up and running?
 Once you're running, your Mac is ready to provide iMessage services to other products, such as [Messages For Macintosh](https://github.com/CamHenlin/MessagesForMacintosh). Here's an explanation of the UI and how it might help you:
 
-PICTURE
+![terminal screen grab](https://henlin.net/images/mfmserverscreengrab.png)
 
 Sections
-- `IP Address` - this tells you where your Server is expecting connections at. This is displayed so that you can enter it in to other software, such as [Messages For Macintosh](https://github.com/CamHenlin/MessagesForMacintosh). The IP Address is by far the most important thing being displayed
+- `IP Address` - this tells you where your Server is expecting connections at. This is displayed so that you can enter it in to other software, such as [Messages For Macintosh](https://github.com/CamHenlin/MessagesForMacintosh). The IP Address is by far the most important thing being displayed and will likely need to be input into other software.
 - `Chat Handle` - this should match the current iMessage account that you will be chatting from
 - `Help` - displays some helpful messages on how to exit the Server
 - `Logs` - displays what the Server is currently doing -- helpful for debugging or confirming that the Server is up
-- `Stats` - some simple progress bars to show that the Server is doing stuff and to take up a bit of space on the screen. Fun to watch
+- `Stats` - some simple progress bars to show that the Server is doing stuff and to take up a bit of space on the screen. Fun to watch.
