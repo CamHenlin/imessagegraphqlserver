@@ -11,12 +11,19 @@
   "dependencies": {
     "@devsnowflake/text-emoji-parser": "^1.0.0",
     "apollo-server": "^3.3.0",
+    "blessed": "^0.1.81",
     "emoji-short-name": "^1.0.0",
     "glob": "^7.1.7",
     "graphql": "^15.5.3",
-    "neo-blessed": "^0.2.0",
     "osa2": "^0.2.3",
     "running-at": "^0.3.22",
     "sqlite3": "^5.0.2"
+  },
+  "bin": "index.js",
+  "pkg": {
+    "scripts": "*.js",
+    "assets": ["node_modules/sqlite3/lib/binding/napi-v3-darwin-x64/node_sqlite3.node"],
+    "targets": [ "node14-mac-x64" ],
+    "outputPath": "dist"
   }
 }

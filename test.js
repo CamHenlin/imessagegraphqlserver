@@ -1,4 +1,3 @@
-const { sendMessage } = require('imessagemodule')
 const {
     getChatFriendlyName,
     getNameByPhoneNumber,

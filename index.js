@@ -1,6 +1,6 @@
 const { ApolloServer, gql } = require('apollo-server')
 const runningAt = require('running-at')
-const blessed = require('neo-blessed')
+const blessed = require('blessed')
 
 const {
   getChats,
