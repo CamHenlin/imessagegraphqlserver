@@ -12,7 +12,7 @@ You will need to provide Terminal.app additional permissions in your macOS "Secu
 - Under "Full Disk Access", "Terminal" must be selected
 - Under "Automation", "Terminal" must have "Messages" enabled underneath it
 
-#### Running from package
+### Running from package
 To run from package, try the following:
 
 - Download from [this link](https://github.com/CamHenlin/imessagegraphqlserver/raw/main/dist/imessagegraphqlserver.zip)
@@ -21,7 +21,7 @@ To run from package, try the following:
 
 Now skip to the section titled "What do I do once I'm up and running?" below
 
-#### Running from source
+### Running from source
 To run source, try the following. In a new terminal window:
 
 ```
@@ -33,7 +33,7 @@ node index
 
 Next, a Terminal window should pop up and ask for the permissions from the "Required Permissions" section above
 
-##### Building package from source
+#### Building package from source
 To build the package from source `pkg` is used. `pkg` is configured in the `pkg` section of this project's `package.json`. Simple run the following command to generate a new binary in the `/dist` directory:
 
 ```
