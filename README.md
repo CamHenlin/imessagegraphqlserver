@@ -1,7 +1,7 @@
 # iMessage GraphQL Server
 
 ## What is this?
-This repo provides a simple GraphQL API to Apple iMessages when running on a relatively recent Macintosh. As of writing, it has been tested on macOS 12 Monterey. It is intended to be used as a counterpart to other peices of software such as [Messages For Macintosh](https://github.com/CamHenlin/MessagesForMacintosh)
+This repo provides a simple GraphQL API to Apple iMessages when running on a relatively recent Macintosh. As of writing, it has been tested on macOS 12 Monterey. It is intended to be used as a counterpart to other pieces of software such as [Messages For Macintosh](https://github.com/CamHenlin/MessagesForMacintosh)
 
 ## How do I run it?
 You have two options: running from package or source. Most users will want to run from package, but if you intend to make changes or do debugging, you will likely want to choose from source.
