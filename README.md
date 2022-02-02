@@ -12,6 +12,8 @@ You will need to provide Terminal.app additional permissions in your macOS "Secu
 - Under "Full Disk Access", "Terminal" must be selected
 - Under "Automation", "Terminal" must have "Messages" enabled underneath it
 
+Additionally, if you are running from package, you will almost certainly be told that you can't run software from unidentified developers. You'll need to go to the "Security & Privacy" general tab and click "Open Anyways" after the first time you try opening the package.
+
 ### Running from package
 To run from package, try the following:
 
