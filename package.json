@@ -22,8 +22,12 @@
   "bin": "index.js",
   "pkg": {
     "scripts": "*.js",
-    "assets": ["node_modules/sqlite3/lib/binding/napi-v3-darwin-x64/node_sqlite3.node"],
-    "targets": [ "node14-mac-x64" ],
+    "assets": [
+      "node_modules/sqlite3/lib/binding/napi-v3-darwin-x64/node_sqlite3.node"
+    ],
+    "targets": [
+      "node14-mac-x64"
+    ],
     "outputPath": "dist"
   }
 }

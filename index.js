@@ -286,6 +286,7 @@ const resolvers = {
       updateHTTPRequestsProgress()
 
       let {selectedChatId, selectedChatFriendlyName} = await getChatInformationFromArgs(args)
+      args.message = decodeURIComponent(args.message)
 
       if (DEBUGGING) {
 
