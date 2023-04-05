@@ -285,11 +285,15 @@ const getAllMessagesInChatWithDate = (SELECTED_CHATTER, date) => {
 			SQL = `
 				SELECT DISTINCT
 					message.text,
+					handle.id,
+					message.is_from_me,
 					((message.date / 1000000000) + 978307200) * 1000 AS date_x 
 				FROM 
 					message 
 				LEFT OUTER JOIN 
 					chat ON chat.room_name = message.cache_roomnames
+				INNER JOIN
+					handle ON handle.ROWID = message.handle_id
 				WHERE
 					message.service = 'iMessage' 
 					AND
@@ -302,12 +306,14 @@ const getAllMessagesInChatWithDate = (SELECTED_CHATTER, date) => {
 			SQL = `
 				SELECT DISTINCT
 					message.text,
+					handle.id,
+					message.is_from_me,
 					((message.date / 1000000000) + 978307200) * 1000 AS date_x 
 				FROM
 					message
 				LEFT OUTER JOIN
 					chat ON chat.room_name = message.cache_roomnames 
-				LEFT OUTER JOIN
+				INNER JOIN
 					handle ON handle.ROWID = message.handle_id 
 				WHERE
 					message.service = 'iMessage' AND handle.id = '${SELECTED_CHATTER}'
